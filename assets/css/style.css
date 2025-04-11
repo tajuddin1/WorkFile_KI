@@ -1,0 +1,204 @@
+:root{
+    --dp-red: #E2001A;
+    --dp-black: #282828;
+    --dp-gray: #F6F6F6;
+    --dp-white: #FFFFFF;
+    --dp-white-2: #f0f0f0;
+    --font-roboto: "Roboto", sans-serif;
+}
+
+body{
+    font-family: var(--font-roboto);
+    color: var(--dp-black);
+}
+
+header{
+    background-color: var(--dp-white-2);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.container-lg{
+    max-width: 1480px;
+    margin: auto;
+}
+.bg-black{
+    background-color: var(--dp-black) !important;
+}
+.logo-link{
+    max-width: 90px;
+}
+.hero{
+    background-color: var(--dp-white-2)
+}
+.hero-content{
+    max-width: 540px;
+}
+.title-lg{
+    font-size: 3rem;
+}
+.title{
+    font-size: 2.375rem;
+}
+
+.title span{
+    color: var(--dp-red)
+}
+
+.container{
+    max-width: 1175px; ;
+}
+.btn-danger{
+    background-color: var(--dp-red);
+}
+.btn_link.active{
+    border-bottom: 4px solid var(--dp-red) !important;
+}
+.btn-outline-dark:hover{
+    background-color: var(--dp-red) !important;
+    color: var(--dp-white) !important;
+    border-color: var(--dp-red) !important;
+}
+.py-6{
+    padding-top: 4rem !important;
+    padding-bottom: 4rem !important;
+}
+.px-6{
+    padding-left: 4rem !important;
+    padding-right: 4rem !important;
+}
+.p-6{
+    padding: 4rem !important;
+}
+.pt-6{
+    padding-top: 4rem !important;
+}
+.pb-6{
+    padding-bottom: 4rem !important;
+}
+
+.shadow-dp{
+    box-shadow: 0 0 6px 0 #0000001F;
+}
+
+.overly-logo{
+    max-width: 80px;
+    height: auto;
+    left: auto;
+    right: 30px;
+    top: 0;
+}
+.fs-exsm{
+    font-size: .8rem;
+}
+
+.accordion-button::after {
+    width: 25px;
+    height: 25px;
+    background-size: contain;
+    background-image: url(../images/plus.png);
+}
+
+.accordion-button:not(.collapsed)::after {
+    width: 25px;
+    height: 25px;
+    background-image: url(../images/minus.png);
+}
+.accordion-button {
+    color: var(--dp-black);
+    background-color: var(--dp-white-2);
+}
+.accordion-button:hover {
+    background-color: #fafafa;
+}
+.accordion-button:focus {
+    box-shadow: unset;
+    outline: 0;
+}
+.accordion-button:not(.collapsed) {
+    color: var(--dp-black);
+    font-weight: 600;
+    background-color: #fafafa;
+    box-shadow: unset;
+}
+.accordion-body{
+    background-color: #fafafa;
+}
+.check-red{
+    list-style-image: url(../images/check.svg);
+}
+
+.check-red li::marker {
+    font-size: 1.7em;
+    line-height: 1;
+}
+.footer-link{
+    font-size: 1.125rem;
+}
+.footer-link a{
+    transition: 0.3s ease;
+}
+.footer-link:hover a{
+    text-decoration: underline !important;
+}
+.box{
+    width: 70px;
+    height: 70px;
+    transition: 0.3s ease;
+}
+footer .box:hover{
+    background-color: var(--dp-red);
+
+}
+
+
+@media screen and (max-width: 1120px) {
+    .title {
+        font-size: 2.18rem;
+    }
+}
+@media screen and (max-width: 991px) {
+    .title {
+        font-size: 2.375rem;
+    }
+    .hero-content{
+        max-width: 100%;
+    }
+    .logo-link{
+        max-width: 60px;
+    }
+    .overly-logo {
+        max-width: 50px;
+    }
+}
+@media screen and (max-width: 590px) {
+    .title {
+        font-size: 1.75rem;
+    }
+    .btn-group.border.rounded-3.overflow-hidden .btn {
+        white-space: nowrap;
+    }
+    .btn-group-wrapper {
+        overflow: scroll;
+    }
+    .container, .container-lg {
+        padding: 0 20px !important;
+    }
+    .check-red {
+        padding-left: 15px;
+    }
+}
+@media screen and (max-width: 420px) {
+    .title {
+        font-size: 1.5rem;
+    }
+}
+@media screen and (max-width: 374px) {
+    .title {
+        font-size: 1.3rem;
+    }
+    a.btn {
+        font-size: 13px;
+    }
+}
