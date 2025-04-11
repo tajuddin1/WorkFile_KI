@@ -11,7 +11,7 @@ links.forEach(link => {
 
     if (targetEl) {
       const isMobile = window.innerWidth <= 991;
-      const offset = isMobile ? 70 : 175; 
+      const offset = isMobile ? 175 : 175; 
 
       const topPos = targetEl.getBoundingClientRect().top + window.scrollY - offset;
 
