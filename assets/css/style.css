@@ -73,6 +73,12 @@ header {
 .btn_link.active {
     border-bottom: 4px solid var(--dp-red) !important;
 }
+.btn_link:focus {
+    border-bottom: 4px solid var(--dp-red) !important;
+}
+.btn_link_redirect:focus {
+    border-bottom: 4px solid var(--dp-red) !important;
+}
 
 .btn-outline-dark {
     color: var(--dp-black) !important;
