@@ -2,6 +2,7 @@ const links = document.querySelectorAll('.btn-group .btn_link');
 
 links.forEach(link => {
   link.addEventListener('click', (e) => {
+    e.preventDefault();
 
     links.forEach(l => l.classList.remove('active'));
     link.classList.add('active');
@@ -11,7 +12,7 @@ links.forEach(link => {
 
     if (targetEl) {
       const isMobile = window.innerWidth <= 991;
-      const offset = isMobile ? 175 : 175; 
+      const offset = isMobile ? 70 : 175; 
 
       const topPos = targetEl.getBoundingClientRect().top + window.scrollY - offset;
 
