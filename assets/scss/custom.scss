@@ -1,0 +1,12 @@
+// Custom breakpoints
+$grid-breakpoints: (
+  sm: 576px,
+  md: 600px,
+  lg: 960px,
+  xl: 1280px,
+  xxl: 1400px
+);
+
+// Import Bootstrap core
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
