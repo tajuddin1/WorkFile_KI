@@ -17,44 +17,55 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <header>
-        <div class="container-lg px-4 px-xl-0">
-            <a href="index.html" class="logo-link d-block">
-                <img src="assets/images/logo.png" alt="Logo" class="img-fluid">
-            </a>
-        </div>
-    </header>
-    <section class="hero pb-6 pb-lg-0">
-        <div class="container-fluid px-4 px-xl-3">
-            <div class="row flex-column-reverse flex-lg-row">
-                <div class="col-lg-6 d-flex align-items-center justify-content-lg-end">
-                    <div class="hero-content me-xl-4">
-                        <h1 class="title fw-light mb-4">
-                            Die erste <span class="fw-medium">KI für Betriebsräte -</span> neu und exklusiv bei der W.A.F.
-                        </h1>
-                        <p class="hero-subtitle fw-normal mb-36">Schnelle und klar verständliche Antworten – rund um die Uhr.</p>
-                        <div class="group d-flex gap-3 flex-wrap">
-                            <a href="#" class="btn btn-danger rounded-3 px-3 py-2 fw-medium">Kostenlos starten</a>
-                            <a href="#" class="btn btn-outline-dark rounded-3 px-3 py-2 fw-medium">Mehr erfahren</a>
+    <section class="top position-relative">
+        <header class="position-absolute top-0 start-0 w-100">
+            <div class="container-lg px-4 px-xl-3">
+                <a href="index.html" class="logo-link d-block">
+                    <img src="assets/images/logo.png" alt="Logo" class="img-fluid">
+                </a>
+            </div>
+        </header>
+        <div class="hero pt-xl-4">
+            <div class="container-fluid px-4 px-xl-3">
+                <div class="row flex-column-reverse flex-lg-row">
+                    <div class="col-lg-6 d-flex align-items-center justify-content-lg-end pb-5 pb-lg-0">
+                        <div class="hero-content me-xl-4">
+                            <h1 class="title text-white fw-light mb-4">
+                                Die erste <span class="fw-medium text-white">KI für Betriebsräte –</span> neu und exklusiv bei der W.A.F.
+                            </h1>
+                            <p class="hero-subtitle fw-normal mb-36 text-white">Schnelle und klar verständliche Antworten – rund um die Uhr.</p>
+                            <div class="group d-flex gap-3 flex-wrap">
+                                <a href="#" class="btn btn-danger rounded-3 px-3 py-2 fw-bold">Kostenlos starten</a>
+                                <a href="#" class="btn btn-outline-light rounded-3 px-3 py-2 fw-bold">Anmelden</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="image-wrapper">
-                        <img class="img-fluid" src="assets/images/hero-banner.png" alt="">
+                    <div class="col-lg-6 px-0 px-lg-2">
+                        <div class="image-wrapper">
+                            <img class="img-fluid" src="assets/images/hero-banner2.png" alt="">
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="py-6 sticky-top bg-white">
-        <div class="container px-4 px-xl-3">
-            <div class="btn-group-wrapper">
-                <div class="btn-group border rounded-3 overflow-hidden">
-                    <a href="#vorteile" class="btn border-0 border-danger btn_link active rounded-0 px-4 px-lg-5 py-2 fw-medium">Vorteile</a>
-                    <a href="#app" class="btn border-0 border-danger btn_link rounded-0 px-4 px-lg-5 py-2 fw-medium">App Download</a>
-                    <a href="#faq" class="btn border-0 border-danger btn_link rounded-0 px-4 px-lg-5 py-2 fw-medium">FAQ</a>
-                    <a href="https://www.waf-seminar.de/datenschutz" class="btn border-0 border-danger btn_link_redirect rounded-0 px-4 px-lg-5 py-2 fw-medium">Datenschutz</a>
+    <section class="sticky-nav sticky-top bg-white d-flex flex-column">
+        <div class="container-lg d-flex justify-content-between align-items-center px-4 px-xl-3">
+            <a href="#" class="logo-wrapper z-1"><img class="img-fluid" src="assets/images/logo-transparent.png" alt=""></a>
+            <div class="cta-link-group group d-flex gap-3 z-1">
+                <a href="#" class="btn btn-danger rounded-3 px-3 py-2 fw-bold">Kostenlos starten</a>
+                <a href="#" class="btn btn-outline-dark rounded-3 px-3 py-2 fw-bold">Anmelden</a>
+            </div>
+        </div>
+        <div class="sticky-menu w-100">
+            <div class="container px-4 px-xl-3">
+                <div class="btn-group-wrapper">
+                    <div class="nav_btns btn-group rounded-0 overflow-hidden">
+                        <a href="#vorteile" class="btn border-0 border-danger btn_link active rounded-0 px-4 px-lg-5 py-2 fw-medium">Vorteile</a>
+                        <a href="#app" class="btn border-0 border-danger btn_link rounded-0 px-4 px-lg-5 py-2 fw-medium">App Download</a>
+                        <a href="#faq" class="btn border-0 border-danger btn_link rounded-0 px-4 px-lg-5 py-2 fw-medium">FAQ</a>
+                        <a href="https://www.waf-seminar.de/datenschutz" class="btn border-0 border-danger btn_link_redirect rounded-0 px-4 px-lg-5 py-2 fw-medium">Datenschutz</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -67,7 +78,7 @@
                     <div class="card align-items-center w-100 border-0 shadow-dp py-5 px-4 px-lg-5">
                         <img class="img-fluid mb-3" width="72" src="assets/images/icon-1.png" alt="">
                         <h5 class="text-center fw-medium">Klare Antworten</h5>
-                        <p class="text-center mb-0 fw-light">Erhalte sofort verlässliche Antworten auf alle Fragen im Gremium.</p>
+                        <p class="text-center mb-0 fw-light">Erhalten Sie sofort verlässliche Antworten auf alle Fragen im Gremium.</p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 d-flex">
@@ -81,14 +92,14 @@
                     <div class="card align-items-center w-100 border-0 shadow-dp py-5 px-4 px-lg-5">
                         <img class="img-fluid mb-3" width="72" src="assets/images/icon-3.png" alt="">
                         <h5 class="text-center fw-medium">Praktische Arbeitshilfen</h5>
-                        <p class="text-center mb-0 fw-light">Gesetze, Musterformulare, Videos und zusätzliches Wissen auf einem Blick.</p>
+                        <p class="text-center mb-0 fw-light">Gesetze, Musterformulare, Videos und zusätzliches Wissen auf einen Blick.</p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 d-flex">
                     <div class="card align-items-center w-100 border-0 shadow-dp py-5 px-4 px-lg-5">
                         <img class="img-fluid mb-3" width="72" src="assets/images/icon-4.png" alt="">
                         <h5 class="text-center fw-medium">Überall auf allen Geräten</h5>
-                        <p class="text-center mb-0 fw-light">Egal ob Smartphone,Tablet oder PC – auf jedem Gerät einsatzbereit.</p>
+                        <p class="text-center mb-0 fw-light">Egal ob Smartphone, Tablet oder PC – auf jedem Gerät einsatzbereit.</p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 d-flex">
@@ -100,22 +111,22 @@
                 </div>
                 <div class="col-md-6 col-lg-4 d-flex">
                     <div class="card align-items-center w-100 border-0 shadow-dp py-5 px-4 px-lg-5">
-                        <img class="img-fluid mb-3" width="72" src="assets/images/icon-1.png" alt="">
+                        <img class="img-fluid mb-3" width="72" src="assets/images/icon-6.png" alt="">
                         <h5 class="text-center fw-medium">Analyse von Dokumenten</h5>
-                        <p class="text-center mb-0 fw-light">Lade dein Dokument hoch und erhalte mögliche Optimierungsvorschläge.</p>
+                        <p class="text-center mb-0 fw-light">Dokument hochladen und Optimierungsvorschläge erhalten.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section id="app" class="bg-black py-6">
+    <section id="app" class="bg-blur-blue py-6">
         <div class="container px-4 px-xl-3">
             <div class="row m-0 flex-column-reverse flex-lg-row row-gap-4"> 
                 <div class="col-lg-6 px-0 pe-lg-4 d-flex align-items-center">
                     <div class="app-content text-white">
                         <h1 class="title fw-light mb-3">Immer für Sie da – Ihre Betriebsrat KI zum Mitnehmen.</h1>
-                        <p class="fw-light">Ob in der Betriebsratssitzung, unterwegs oder am Schreibtisch: Diese App denkt mit, entlastet und unterstützt – genau dann, wenn Sie es brauchen.</p>
-                        <p class="fw-light mb-4">Laden Sie jetzt die App herunter – und erleben Sie, wie einfach <br> Betriebsratsarbeit digital unterstützt werden kann.</p>
+                        <p class="fw-normal">Ob in der Betriebsratssitzung, unterwegs oder am Schreibtisch: Diese App denkt mit, entlastet und unterstützt – genau dann, wenn Sie es brauchen.</p>
+                        <p class="fw-normal mb-4">Laden Sie jetzt die App herunter – und erleben Sie, wie einfach <br> Betriebsratsarbeit digital unterstützt werden kann.</p>
                         <div class="btn-group">
                             <a href="#" class="me-4"><img class="img-fluid" width="142" src="assets/images/apple-store.png" alt=""></a>
                             <a href="#" class=""><img class="img-fluid" width="142" src="assets/images/google-play-store.png" alt=""></a>
@@ -136,7 +147,7 @@
             </div>
         </div>
     </section>
-    <section class="py-6 bg-black">
+    <section class="py-6 bg-blur-blue">
         <div class="container px-4 px-xl-3">
             <div class="d-flex flex-column flex-lg-row gap-5 gap-lg-0 w-100 align-items-center justify-content-around">
                 <div class="text-white mb-3 mb-lg-0">
@@ -147,7 +158,7 @@
                             <span class="fs-exsm d-block lh-1">Millionen</span>
                         </div>
                     </div>
-                    <p class="fw-light text-center opacity-75 mb-0">160 Millionen gespeicherte <br> Wissenseinheiten.</p>
+                    <p class="fw-normal text-center opacity-75 mb-0">160 Millionen Wissensverbindungen – <br> KI, die Sie versteht</p>
                 </div>
                 <div class="text-white mb-3 mb-lg-0">
                     <div class="d-flex align-items-center justify-content-center mb-4">
@@ -156,7 +167,7 @@
                             <h1 class="title-lg mb-0 lh-1">311.000</h1>
                         </div>
                     </div>
-                    <p class="fw-light text-center opacity-75 mb-0">311.000 erfasste Dokumente, <br> Artikel und Inhalte.</p>
+                    <p class="fw-normal text-center opacity-75 mb-0">311.000 erfasste Dokumente, <br> Artikel und Inhalte.</p>
                 </div>
                 <div class="text-white mb-3 mb-lg-0">
                     <div class="d-flex align-items-center justify-content-center mb-4">
@@ -165,7 +176,7 @@
                             <h1 class="title-lg mb-0 lh-1">3.000</h1>
                         </div>
                     </div>
-                    <p class="fw-light text-center opacity-75 mb-0">Über 3.000 Videos und Podcasts <br> stehen zur Verfügung.</p>
+                    <p class="fw-normal text-center opacity-75 mb-0">Über 3.000 Videos und Podcasts <br> stehen zur Verfügung.</p>
                 </div>
             </div>
         </div>
@@ -176,9 +187,9 @@
                 <div class="col-lg-6 px-0 pe-lg-4 d-flex align-items-center">
                     <div class="app-content">
                         <h1 class="title fw-light mb-4"><span class="fw-medium">Immer und überall</span> informiert – ihre persönliche Betriebsrats KI.</h1>
-                        <p class="fw-light mb-36">Rund um die Uhr einsatzbereit für ihre Betriebsratsarbeit.</p>
+                        <p class="fw-normal mb-36">Rund um die Uhr einsatzbereit für ihre Betriebsratsarbeit.</p>
                         <div class="group">
-                            <a href="#" class="btn btn-outline-dark rounded-3 px-3 py-2 fw-medium">Kostenlos starten</a>
+                            <a href="#" class="btn btn-outline-dark rounded-3 px-3 py-2 fw-bold">Kostenlos starten</a>
                         </div>
                     </div>
                 </div>
@@ -194,9 +205,9 @@
                 <div class="col-lg-6 px-0 ps-lg-4 d-flex align-items-center">
                     <div class="app-content">
                         <h1 class="title fw-light mb-4"><span class="fw-medium">Betriebsratswahl 2026:</span> Jetzt die Zukunft mitgestalten!</h1>
-                        <p class="fw-light mb-36">Dein Weg zur Betriebsratswahl 2026 – wir helfen ihnen als Wahlvorstand bestmöglich vorbereitet zu sein.</p>
+                        <p class="fw-normal mb-36">Ihr Weg zur Betriebsratswahl 2026 – wir helfen Ihnen als Wahlvorstand bestmöglich vorbereitet zu sein.</p>
                         <div class="group">
-                            <a href="#" class="btn btn-outline-dark rounded-3 px-3 py-2 fw-medium">Fragen beantworten rund um die Wahl</a>
+                            <a href="#" class="btn btn-outline-dark rounded-3 px-3 py-2 fw-bold">Fragen beantworten rund um die Wahl</a>
                         </div>
                     </div>
                 </div>
@@ -326,38 +337,39 @@
     <section class="pb-6">
         <div class="container px-4 px-xl-3">
             <div class="card border-0 shadow-dp rounded-4 d-flex flex-column align-items-center justify-content-center py-5 px-3">
-                <div class="d-flex flex-column flex-lg-row align-items-center gap-4 mb-4">
+                <div class="d-flex flex-column flex-lg-row align-items-center gap-4 gap-lg-3 mb-4">
                     <img class="img-fluid" width="72" src="assets/images/shield-keyhole.png" alt="">
-                    <h1 class="title text-center text-lg-start fw-light mb-0">Erfahren Sie mehr über den Datenschutz</h1>
+                    <h1 class="title text-center text-lg-start fs-2 fw-light mb-0">Erfahren Sie mehr über den Datenschutz und die Nutzungsbedingungen</h1>
                 </div>
-                <div class="group">
-                    <a href="#" class="btn btn-outline-dark rounded-3 px-3 py-2 fw-medium">Datenschutz öffnen</a>
+                <div class="group d-flex flex-column flex-lg-row gap-3">
+                    <a href="#" class="btn btn-outline-dark rounded-3 px-3 py-2 fw-medium">Datenschutz</a>
+                    <a href="#" class="btn btn-outline-dark rounded-3 px-3 py-2 fw-medium">Nutzungsbedingungen</a>
                 </div>
             </div>
         </div>
     </section>
 
 
-    <footer class="bg-dark pt-5">
+    <footer class="bg-blur-blue pt-5">
         <div class="container px-4 px-xl-3">
             <div class="d-flex flex-column gap-5">
                 <div class="footer-top d-flex flex-column flex-lg-row row-gap-4 text-white w-100 align-items-start justify-content-between">
                     <div class="wrapper">
                         <h4>Seminare für Betriebsräte</h4>
-                        <p class="footer-link mb-0 fw-light"><a href="#" class="text-white text-decoration-none">Katalog kostenlos bestellen</a></p>
-                        <p class="footer-link mb-0 fw-light"><a href="#" class="text-white text-decoration-none">Seminarübersicht</a></p>
+                        <p class="footer-link mb-0 fw-normal"><a href="#" class="text-white text-decoration-none">Katalog kostenlos bestellen</a></p>
+                        <p class="footer-link mb-0 fw-normal"><a href="#" class="text-white text-decoration-none">Seminarübersicht</a></p>
                     </div>
                     <div class="wrapper">
                         <h4>Unternehmen</h4>
-                        <p class="footer-link mb-0 fw-light"><a href="#" class="text-white text-decoration-none">Wer ist die W.A.F.</a></p>
+                        <p class="footer-link mb-0 fw-normal"><a href="#" class="text-white text-decoration-none">Wer ist die W.A.F.</a></p>
                     </div>
                     <div class="wrapper">
                         <h4>Service</h4>
-                        <p class="footer-link mb-0 fw-light"><a href="#" class="text-white text-decoration-none">Kontakt</a></p>
-                        <p class="footer-link mb-0 fw-light"><a href="#" class="text-white text-decoration-none">Newsletter</a></p>
-                        <p class="footer-link mb-0 fw-light"><a href="#" class="text-white text-decoration-none">waf-seminar.de</a></p>
-                        <p class="footer-link mb-0 fw-light"><a href="#" class="text-white text-decoration-none">betriebsrat.com</a></p>
-                        <p class="footer-link mb-0 fw-light"><a href="#" class="text-white text-decoration-none">betriebsratswahl.de</a></p>
+                        <p class="footer-link mb-0 fw-normal"><a href="#" class="text-white text-decoration-none">Kontakt</a></p>
+                        <p class="footer-link mb-0 fw-normal"><a href="#" class="text-white text-decoration-none">Newsletter</a></p>
+                        <p class="footer-link mb-0 fw-normal"><a href="#" class="text-white text-decoration-none">waf-seminar.de</a></p>
+                        <p class="footer-link mb-0 fw-normal"><a href="#" class="text-white text-decoration-none">betriebsrat.com</a></p>
+                        <p class="footer-link mb-0 fw-normal"><a href="#" class="text-white text-decoration-none">betriebsratswahl.de</a></p>
                     </div>
                     <div class="wrapper d-flex align-items-center mx-auto mx-lg-0">
                         <a href="#" class="box pt-1 rounded-2 d-flex gap-2 flex-column align-items-center justify-content-center text-decoration-none text-white">
@@ -380,16 +392,16 @@
                 </div>
                 <div class="footer-bottom pb-4">
                     <p class="text-center"><a href="#"><img width="64" src="assets/images/logo-red.png" alt=""></a></p>
-                    <p class="text-center footer-link fw-light"><a href="#" class="text-white text-decoration-none">Betriebsrat KI</a></p>
+                    <p class="text-center footer-link fw-normal"><a href="#" class="text-white text-decoration-none">Betriebsrat KI</a></p>
                     <div class="btn-group d-flex justify-content-center mb-5">
                         <a href="#" class="me-4"><img class="img-fluid" width="142" src="assets/images/apple-store.png" alt=""></a>
                         <a href="#" class=""><img class="img-fluid" width="142" src="assets/images/google-play-store.png" alt=""></a>
                     </div>
-                    <p class="text-center fw-light d-flex gap-4 justify-content-center mb-3">
+                    <p class="text-center fw-normal d-flex gap-4 justify-content-center mb-3">
                         <a href="#" class="text-white text-decoration-none">Impressum</a>
                         <a href="#" class="text-white text-decoration-none">Datenschutz</a>
                     </p>
-                    <p class="footer-last mb-0 opacity-75 text-white fw-light text-center">Copyright © 2025 W.A.F. Institut für Betriebsräte-Fortbildung AG.</p>
+                    <p class="footer-last mb-0 opacity-75 text-white fw-normal text-center">Copyright © 2025 W.A.F. Institut für Betriebsräte-Fortbildung AG.</p>
                 </div>
             </div>
         </div>

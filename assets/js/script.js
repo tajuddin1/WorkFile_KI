@@ -12,7 +12,7 @@ links.forEach(link => {
 
     if (targetEl) {
       const isMobile = window.innerWidth <= 991;
-      const offset = isMobile ? 175 : 175; 
+      const offset = isMobile ? 100 : 100; 
 
       const topPos = targetEl.getBoundingClientRect().top + window.scrollY - offset;
 
@@ -43,4 +43,26 @@ links.forEach(link => {
     });
     allOpen = !allOpen;
 
+  });
+
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const stickyNav = document.querySelector('.sticky-nav');
+    const stickyTop = document.querySelector('.sticky-top');
+    if (!stickyNav || !stickyTop) return;
+
+    const sentinel = document.createElement('div');
+    stickyNav.parentNode.insertBefore(sentinel, stickyNav);
+
+    const observer = new IntersectionObserver(([entry]) => {
+      if (entry.boundingClientRect.top < 0 && !entry.isIntersecting) {
+        stickyTop.classList.add('active');
+      } else {
+        stickyTop.classList.remove('active');
+      }
+    }, {
+      threshold: [0],
+    });
+
+    observer.observe(sentinel);
   });
