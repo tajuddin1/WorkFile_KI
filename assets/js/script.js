@@ -24,6 +24,29 @@ links.forEach(link => {
   });
 });
 
+const footer_cta = document.querySelectorAll('.footer_cta');
+
+footer_cta.forEach(footer_link => {
+  footer_link.addEventListener('click', (e) => {
+    e.preventDefault();
+
+    const targetId = footer_link.getAttribute('href').slice(1);
+    const targetEl = document.getElementById(targetId);
+
+    if (targetEl) {
+      const isMobile = window.innerWidth <= 991;
+      const offset = isMobile ? 100 : 100; 
+
+      const topPos = targetEl.getBoundingClientRect().top + window.scrollY - offset;
+
+      window.scrollTo({
+        top: topPos,
+        behavior: 'smooth'
+      });
+    }
+  });
+});
+
 
 
   const toggleBtn = document.getElementById('faqAll');

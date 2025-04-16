@@ -55,9 +55,12 @@ body {
     visibility: hidden;
     transition: all 0.3s ease;
 }
-.sticky-nav.active .logo-wrapper, .sticky-nav.active .cta-link-group{
-    opacity: 1;
-    visibility: visible;
+@media screen and (min-width: 960px) {
+    .sticky-nav.active .logo-wrapper, .sticky-nav.active .cta-link-group{
+        opacity: 1;
+        visibility: visible;
+    }
+    
 }
 
 .sticky-nav.sticky-top{
@@ -77,6 +80,9 @@ body {
     align-items: center;
     padding: 10px 0 0;
     margin-top: 1px;
+    background: #fffffffa;
+    box-shadow: 0px 2px 8px 0px #00000008;
+    backdrop-filter: blur(20px);
 }
 .sticky-menu.w-100 {
     margin-top: -90px;
@@ -283,11 +289,13 @@ footer .box:hover {
 
 }
 @media screen and (max-width: 1350px) {
-    .sticky-nav.active .sticky-menu.w-100 {
-        padding-left: 10vw ;
-    }
     .image-wrapper img {
         min-height: 500px;
+    }
+}
+@media screen  and (min-width:960px) and (max-width: 1350px) {
+    .sticky-nav.active .sticky-menu.w-100 {
+        padding-left: 10vw ;
     }
 }
 
